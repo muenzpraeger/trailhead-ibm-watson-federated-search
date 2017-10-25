@@ -1,0 +1,25 @@
+{
+  "name": "Salesforce Federated Search",
+  "description":
+    "Connecting IBM Watson Discovery to Salesforce Federated Search",
+  "keywords": ["salesforce", "ibm", "node", "watson"],
+  "website":
+    "https://github.com/muenzpraeger/trailhead-ibm-watson-federated-search",
+  "repository":
+    "https://github.com/muenzpraeger/trailhead-ibm-watson-federated-search",
+  "success_url": "/",
+  "env": {
+    "WATSON_USERNAME": {
+      "description": "Watson Discovery Service Username"
+    },
+    "WATSON_PASSWORD": {
+      "description": "Watson Discovery Service Password"
+    },
+    "ENVIRONMENT_ID": {
+      "description": "Watson Discovery Service Environment ID"
+    },
+    "COLLECTION_ID": {
+      "description": "Watson Discovery Service Collection ID"
+    }
+  }
+}

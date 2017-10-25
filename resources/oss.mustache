@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:sfdc="http://salesforce.com/2016/federatedsearch/1.0">
+	<ShortName>Salesforce Federated Search and Watson Discovery</ShortName>
+	<Contact>mail@winkelmeyer.com</Contact>
+	<Url type="application/atom+xml" sfdc:maxTotalResults="500"
+template="https://{{hostname}}/ossInterface?q={searchTerms}&amp;byId={sfdc:searchById?}&amp;type={sfdc:recordType}&amp;start={startIndex?}&amp;num={count?}"/>
+	<sfdc:RecordTypes>
+		<sfdc:RecordType name="Watson Discovery">
+			<sfdc:Field name="User" type="string" sortable="true"/>
+			<sfdc:Field name="Twitter" type="string" sortable="true"/>
+			<sfdc:Field name="Beverage" type="string" sortable="true"/>
+			<sfdc:Field name="Quotes" type="string" sortable="true"/>
+		</sfdc:RecordType>
+	</sfdc:RecordTypes>
+	<InputEncoding>UTF-8</InputEncoding>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<sfdc:Version>1</sfdc:Version>
+</OpenSearchDescription>

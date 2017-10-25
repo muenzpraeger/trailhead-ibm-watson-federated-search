@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:sfdc="http://salesforce.com/2016/federatedsearch/1.0">
+    <title>Salesforce Federated Search and Watson Discovery</title>
+    <updated>2016-11-21T10:19:37.644Z</updated>
+    <author>
+      <name>Example</name>
+    </author>
+    <id>urn:uuid:6b63a81d-0a77-48e3-8a74-5d5f34b9da98</id>
+    <opensearch:totalResults>{{matching_results}}</opensearch:totalResults>
+    <opensearch:startIndex>0</opensearch:startIndex>
+    <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+    <opensearch:Query role="request" searchTerms="test" startIndex="0" count="10"/>
+    {{#results}}
+    <entry>
+        <title>{{user}}</title>
+        <id>{{id}}</id>
+        <sfdc:recordType>Watson Discovery</sfdc:recordType>
+        <sfdc:User>{{user}}</sfdc:User>
+        <sfdc:Twitter>{{twitterId}}</sfdc:Twitter>
+        <sfdc:Beverage>{{preferredBeverage}}</sfdc:Beverage>
+        <sfdc:Quotes>{{quotes}}</sfdc:Quotes>
+        <summary>{{bio}}</summary>
+    </entry>
+    {{/results}}
+</feed>
