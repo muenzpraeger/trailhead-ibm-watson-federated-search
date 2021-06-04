@@ -10,10 +10,11 @@
   "success_url": "/",
   "env": {
     "WATSON_USERNAME": {
-      "description": "Watson Discovery Service Username"
+      "description": "Watson Discovery Service Username",
+      "value": "apikey"
     },
-    "WATSON_PASSWORD": {
-      "description": "Watson Discovery Service Password"
+    "WATSON_API_KEY": {
+      "description": "Watson Discovery Service API key"
     },
     "ENVIRONMENT_ID": {
       "description": "Watson Discovery Service Environment ID"
